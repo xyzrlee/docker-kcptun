@@ -1,0 +1,10 @@
+version: '3'
+services:
+    kcptun:
+        build: .
+        image: xyzrlee/kcptun
+        restart: unless-stopped
+        volumes:
+            - .:/conf:ro
+        entrypoint: kcptun-server
+        command: --listen :29900 --target 127.0.0.1:22 -c /conf/config.json

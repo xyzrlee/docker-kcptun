@@ -1,0 +1,8 @@
+{
+    "key":"SJmd989REWlfQD4s2fnN1/Lte4/AlXsUH5qZoYBzVlM=",
+    "crypt":"salsa20",
+    "mode":"fast3",
+    "autoexpire":600,
+    "scavengettl":60,
+    "mtu":1200
+}
