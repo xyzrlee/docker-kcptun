@@ -33,9 +33,10 @@ RUN set -ex \
  && cp kcptun-server /usr/local/bin \
  && cp kcptun-client /usr/local/bin \
  && cd / \
+ && go clean \
  && rm -rf /tmp/repo \
  && rm -rf $(go env GOPATH) \
- && go clean \
+ && rm -rf $(go env GOCACHE) \
  && apk del .build-deps
 
 USER root
