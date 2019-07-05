@@ -15,6 +15,7 @@ RUN set -ex \
       go \
       gcc \
       musl-dev \
+      linux-headers \
  && go get golang.org/x/crypto/pbkdf2 \
            github.com/xtaci/smux \
            github.com/xtaci/kcp-go \
